@@ -1,19 +1,25 @@
-import { deleteContact } from "redux/contactsSlice";
-import { useDispatch } from "react-redux";
-
-import css from './Contact.module.css';
+// import { useDispatch } from "react-redux";
+// import { deleteContact } from "../../redux/operations";
 
 
-export const Contact = ({contact}) => {
-    const dispatch = useDispatch();
-
-    const handleDelete = () => dispatch(deleteContact(contact.id));
+// import css from './Contact.module.css';
 
 
-    return (
-        <>
-            <p>{contact.name}: {contact.number}</p>
-            <button type="button"  className={css.deleteBtn} onClick={handleDelete}>Delete</button>
-        </>
-    );
-};
+// export const Contact = ({contacts}) => {
+//     const dispatch = useDispatch();
+
+//     const handleDelete = () => dispatch(deleteContact(contacts.id));
+
+//     return (
+//         <>
+//           {contacts.map(({id, name, phone}) => {
+//                 return (
+//                     <>
+//                         <p>{name}: {phone}</p>
+//                         <button type="button"  className={css.deleteBtn} onClick={handleDelete}>Delete</button>
+//                     </>
+//                 )
+//             })}
+//         </>
+//     );
+// };
