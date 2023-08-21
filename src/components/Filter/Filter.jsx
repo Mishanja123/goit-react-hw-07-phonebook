@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 
 import { setFilter } from '../../redux/filterSlice'
-import { getFilter } from '../../redux/selectors';
+import { selectFilter } from '../../redux/selectors';
 
 import css  from "./Filter.module.css";
 
@@ -9,7 +9,7 @@ import css  from "./Filter.module.css";
 export const Filter = () => {
 
   const dispatch = useDispatch() 
-  const filter = useSelector(getFilter);
+  const filter = useSelector(selectFilter);
 
   const handleFilterChange = (event) => {
     const filterValue = event.target.value
